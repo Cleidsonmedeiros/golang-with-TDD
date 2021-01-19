@@ -6,7 +6,7 @@ const espanhol = "espanhol"
 const frances = "frances"
 const prefixenglish = "Hello, "
 const prefixespanhol = "Hola, "
-const prefixfrances = "Bonjour ,"
+const prefixfrances = "Bonjour, "
 
 func Hello(name string, language string) string {
 	if name == "" {

@@ -16,7 +16,7 @@ func TestHello(t *testing.T) {
 		checkcorrectmessage(t, result, expected)
 	})
 
-	t.Run("'World' as standard for 'string' empty", func(t *testing.T) {
+	t.Run("in english", func(t *testing.T) {
 		result := Hello("", "")
 		expected := "Hello, World"
 		checkcorrectmessage(t, result, expected)
@@ -25,6 +25,12 @@ func TestHello(t *testing.T) {
 	t.Run("in espanhol", func(t *testing.T) {
 		result := Hello("Elodie", "espanhol")
 		expected := "Hola, Elodie"
+		checkcorrectmessage(t, result, expected)
+	})
+
+	t.Run("in frances", func(t *testing.T) {
+		result := Hello("Elodie", "frances")
+		expected := "Bonjour, Elodie"
 		checkcorrectmessage(t, result, expected)
 	})
 }
